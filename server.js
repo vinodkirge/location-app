@@ -16,12 +16,6 @@ app.use(express.json());
 const postRoutes = require('./routes/post');
 app.use('/api/posts', postRoutes);
 
-const authRoutes = require('./routes/auth');
-app.use('/api', authRoutes);
-
-
-
-
 
 app.get('/', (req, res) => {
   res.send('API is running...');
